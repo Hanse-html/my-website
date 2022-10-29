@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="website-icon" type="" href="images/bg.jpg">
+</head>
+
+
+<script>
+    function myFunction() 
+    {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+
+<body>
+    <div class="background">
+        <div class="navbar">
+            <div class="web-title">Palanca</div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Programs & Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">School Calendar</a></li>
+                    <li><a href="">School Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="signin">
+            <form action="">
+                <h2>Sign in</h2>
+                <input type="email" name="email" placeholder="Email" class="input">
+                <input type="password" id="myInput" placeholder="Password" class="input">
+                <input type="checkbox" id="pass" onclick="myFunction()" class="sh-pass">
+                <h6 class="sh-label">Show Password</h6>
+                <input type="submit" value="Submit" class="sign">
+                <a href="">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
